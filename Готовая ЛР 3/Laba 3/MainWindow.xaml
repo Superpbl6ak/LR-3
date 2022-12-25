@@ -1,0 +1,73 @@
+﻿<Window x:Class="Laba3_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba3_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1300" MinHeight="600" MinWidth="1000"
+        Background="MediumAquamarine">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="2" Grid.ColumnSpan="6" TextAlignment="Center" Foreground="Gray" FontSize="40" Margin="38,10,58,42" Grid.RowSpan="2"><Run Language="ru-ru" Text="Лабораторная работа №3"/></TextBlock>
+
+        <Button Grid.Row="9" Name="CreateBD" Click="CreateBD_OnClick" Width="130" Height="40" Margin="4,3,10,10">
+            <TextBlock TextAlignment="Center"> Создать <LineBreak/> БД</TextBlock>
+        </Button>
+        <Button Grid.Row="10" Name="WriteBD" Click="WriteBD_OnClick" Width="130" Height="40" Grid.ColumnSpan="2" Margin="144,0,15,13">
+            <TextBlock TextAlignment="Center"> Вывод <LineBreak/> БД</TextBlock>
+        </Button>
+
+        <Button Name="Z1" Click="Z1_OnClick" HorizontalAlignment="Center" Width="146">
+            <TextBlock TextAlignment="Center"> Alfa Romeo</TextBlock>
+        </Button>
+        <Button Grid.Row="4" Name="Z2" Click="Z2_OnClick" Margin="1,9,144,45" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <TextBlock TextAlignment="Center"> BMW</TextBlock>
+        </Button>
+        <Button Grid.Row="6" Name="Z3" Click="Z3_OnClick" Margin="1,12,144,37" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <TextBlock TextAlignment="Center"> Машины дешевле <LineBreak/> 10000$</TextBlock>
+        </Button>
+        <Button Name="Z4" Click="Z4_OnClick" Margin="2,2,0,51" Grid.RowSpan="2" Grid.Row="1">
+            <TextBlock TextAlignment="Center">Remark</TextBlock>
+        </Button>
+        <Button Grid.Row="3" Name="Z5" Click="Z5_OnClick" Margin="1,7,144,46" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <TextBlock TextAlignment="Center">Склады с машинами<LineBreak/>2000-2005 гг.</TextBlock>
+        </Button>
+        <Button Grid.Row="5" Name="Z6" Click="Z6_OnClick" Margin="1,10,144,43" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <TextBlock TextAlignment="Center">Машины <LineBreak/> года выпуска до 2000 г.</TextBlock>
+        </Button>
+        <Button Grid.Row="2" Name="Z7" Click="Z7_OnClick" Margin="1,4,144,49" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <TextBlock TextAlignment="Center">Вывод машин<LineBreak/>в файл .txt</TextBlock>
+        </Button>
+
+        <DataGrid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="8" Grid.RowSpan="9" Name="Table1" Margin="135,43,10,53"></DataGrid>
+
+        <!-- <ScrollViewer></ScrollViewer>
+        <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="7" Grid.RowSpan="4" Name="WriteBox" Background="White" FontSize="17"></TextBlock> -->
+
+    </Grid>
+</Window>
